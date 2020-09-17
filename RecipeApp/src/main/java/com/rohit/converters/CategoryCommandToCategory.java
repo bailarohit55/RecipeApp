@@ -2,12 +2,14 @@ package com.rohit.converters;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Component;
 
 import com.rohit.commands.CategoryCommand;
 import com.rohit.domain.Category;
 
 import lombok.Synchronized;
 
+@Component
 public class CategoryCommandToCategory implements Converter<CategoryCommand, Category> {
 
 	@Synchronized
